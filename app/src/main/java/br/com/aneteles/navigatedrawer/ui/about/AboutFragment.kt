@@ -1,4 +1,4 @@
-package br.com.aneteles.navigatedrawer.ui.gallery
+package br.com.aneteles.navigatedrawer.ui.about
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,20 +10,20 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import br.com.aneteles.navigatedrawer.R
 
-class GalleryFragment : Fragment() {
+class AboutFragment : Fragment() {
 
-    private lateinit var galleryViewModel: GalleryViewModel
+    private lateinit var aboutViewModel: AboutViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        galleryViewModel =
-            ViewModelProviders.of(this).get(GalleryViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_gallery, container, false)
-        val textView: TextView = root.findViewById(R.id.text_gallery)
-        galleryViewModel.text.observe(viewLifecycleOwner, Observer {
+        aboutViewModel =
+            ViewModelProviders.of(this).get(AboutViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_about, container, false)
+        val textView: TextView = root.findViewById(R.id.text_home)
+        aboutViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root

@@ -31,7 +31,9 @@ class MenuActivity : AppCompatActivity() {
         fab.setOnClickListener { view ->
             Snackbar.make(view, "Você clicou aqui!", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
-
+            /**
+             * Essa função tem tres parametros, o primeiro parametro é e-mail o sgeundo é o assunto do e-mail, e o terceiro é a mensagem que quer enviar.
+            * */
             sendEmail("tawanesilva.96@hotmail.com","app",getString(R.string.app_text_about))
         }
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)

@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">Navigate Drawer</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Tawane Teles</string>
+    <string name="nav_header_subtitle">tawanesilva.96@hotmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+
+
+    <string name="app_name">Meu Perfil</string>
+    <string name="app_button_name">About Me</string>
+    <string name="app_text_about">Olá, sou desenvolvedora Android Nativo. Trabalho com a linguagem Kotlin e estou a procura de uma oportunidade. </string>
+
+
 </resources>
